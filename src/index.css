@@ -92,3 +92,32 @@ html, body, #root {
 .tl { background-color: #77dd77; } /* Triple letter */
 .dw { background-color: #ffb347; } /* Double word */
 .tw { background-color: #ff6961; } /* Triple word */
+
+
+.game-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #016936;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.turn-indicator {
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  border-radius: 4px;
+  font-weight: bold;
+}
