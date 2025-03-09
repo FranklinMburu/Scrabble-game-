@@ -1,0 +1,9 @@
+.scrabble-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: #f0f0f0;
+  gap: 2rem;
+}

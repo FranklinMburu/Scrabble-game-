@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(15, 40px);
+  gap: 2px;
+  background: #016936;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.board-row {
+  display: contents;
+}
+
+.board-cell {
+  width: 40px;
+  height: 40px;
+  background: #f0d9b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #d3b28b;
+}
+
+.player-rack {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  background: #deb887;
+  border-radius: 8px;
+}
+
+.rack-tile {
+  width: 40px;
+  height: 40px;
+  background: #f0d9b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.rack-tile.selected {
+  border-color: #ff4444;
+}
+
+.tile-letter {
+  font-size: 1.2em;
+}
+
+.tile-value {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  font-size: 0.6em;
+  color: #666;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 2rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.score {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background: #f8f8f8;
+  border-radius: 6px;
+  min-width: 100px;
+}
+
+/* Bonus square styles */
+.dl { background-color: #84b6f4; } /* Double letter */
+.tl { background-color: #77dd77; } /* Triple letter */
+.dw { background-color: #ffb347; } /* Double word */
+.tw { background-color: #ff6961; } /* Triple word */
